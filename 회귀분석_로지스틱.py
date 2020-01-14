@@ -46,7 +46,7 @@ print(pred_Y)
 # 혼동 행렬
 cfmat = confusion_matrix(test_y,pred_Y)
 print(cfmat)
-# 정확도 계산하
+# 정확도 계산한다.
 def acc(cfmat):
     return (cfmat[0,0]+cfmat[1,1])/(cfmat[0,0]+cfmat[0,1]+cfmat[1,0]+cfmat[1,1])
 acc(cfmat)
